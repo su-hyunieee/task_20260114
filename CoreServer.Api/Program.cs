@@ -18,7 +18,6 @@ try
 
     builder.Services.AddControllers();
 
-    // SQLite
     builder.Services.AddDbContext<AppDbContext>(opt =>
         opt.UseSqlite(
             builder.Configuration.GetConnectionString("Sqlite")
@@ -29,12 +28,19 @@ try
     builder.Services.AddScoped<ReadEmployeeService>();
     builder.Services.AddScoped<UpdateEmployeesService>();
 
+    builder.Services.AddOpenApi();
+    
     var app = builder.Build();
 
     using (var scope = app.Services.CreateScope())
     {
         var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
         db.Database.EnsureCreated();
+    }
+
+    if (app.Environment.IsDevelopment())
+    {
+        app.MapOpenApi();
     }
 
     app.UseHttpsRedirection();
