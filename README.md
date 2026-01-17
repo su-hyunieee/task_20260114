@@ -14,6 +14,7 @@
 2. 실행 방법
  2.1 요구사항
 - .NET SDK 9 설치
- 2.2 실행
-dotnet restore
-dotnet run --project CoreServer.Api
+
+2.2 실행
+- dotnet restore
+- dotnet run --project CoreServer.Api
