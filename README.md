@@ -1,6 +1,6 @@
 직원(Employee) 정보를 CSV/JSON으로 입력받아 SQLite에 저장/ 조회 하는 프로젝트
 
-- .NET: net9.0
+- .NET: net 9.0.309
 - DB: SQLite (employee.db)
 - ORM: EF Core
 - 테스트 도구: Postman
