@@ -11,14 +11,11 @@
 - CoreServer.Domain : 도메인 모델
 - CoreServer.Infrastructure : EF Core, Repository, Db
 
-2. 실행 방법
- 2.1 요구사항
-   
+2. 실행 방법<br>
+2.1 요구사항
 - .NET SDK 9 설치
 - SQLite 설치 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
-- OpenApi 설치 dotnet add package Microsoft.AspNetCore.OpenApi
-
-  
-2.2 실행
+- OpenApi 설치 dotnet add package Microsoft.AspNetCore.OpenApi<br>
+2.2 실행<br>
 - dotnet restore
 - dotnet run --project CoreServer.Api
