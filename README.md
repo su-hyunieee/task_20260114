@@ -48,7 +48,7 @@
 - JSON 텍스트 입력 (Content-Type: application/json)
 - CSV / JSON 파일 업로드 (multipart/form-data)
 
-# 5. API Endpoints
+# 5. API 
 
 - GET /api/employee?page={page}&pageSize={pageSize}  
   직원 목록 조회 (페이징)
